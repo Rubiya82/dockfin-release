@@ -1,0 +1,22 @@
+{
+  "assetName": "DockFin-0.1.0-win-x64.zip",
+  "downloadUrl": "https://github.com/Rubiya82/dockfin-release/releases/download/v0.1.0/DockFin-0.1.0-win-x64.zip",
+  "exePath": "DockFin.exe",
+  "exeSha256": "02720ebdb132b156833f585102fdb7a1b1dd663d85bc3e5d7ed550a2bc3270ac",
+  "exeSizeBytes": 3355136,
+  "keyId": "dockfin-release-2026",
+  "platform": "windows-x64",
+  "published": true,
+  "publishedAt": "2026-11-01T19:53:40+09:00",
+  "releaseNotes": {
+    "en": "First DockFin preview: hardware H.264 screen sharing, control/view-only, one-time code and pairing, clipboard sync, multi-monitor.",
+    "ko": "DockFin 첫 공개 미리보기: 하드웨어 H.264 화면 공유, 원격 제어/보기 전용, 1회용 코드·페어링, 클립보드 동기화, 멀티 모니터."
+  },
+  "releaseTag": "v0.1.0",
+  "schemaVersion": 1,
+  "sha256": "a3744f65434619a02739903e86baf84aab780e7a07464afb4f30914627f20306",
+  "signature": "e39b12a0897ca4e1b0650f019bc47366078399802813bccc007d9d25c4ffbe9de758e35f2dd73fe21a294f5b8e8a8b1651a093b83577b130e49f300132c19735",
+  "signatureAlgorithm": "ecdsa-p256-sha256",
+  "sizeBytes": 1609771,
+  "version": "0.1.0"
+}
