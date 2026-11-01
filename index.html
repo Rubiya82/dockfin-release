@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b2a6b">
+  <meta name="description" content="DockFin — 빠른 원격 화면 공유와 제어. Windows PC를 다른 PC와 Android 휴대폰에서 보고 조작하세요.">
+  <title>DockFin — 원격 화면</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <nav class="wrap nav">
+      <a class="brand" href="#"><img src="assets/dockfin.png" width="40" height="40" alt=""><span>Dock<b>Fin</b></span></a>
+      <div class="links"><a href="#features">기능</a><a href="#start">시작하기</a><a href="#security">보안</a><a class="button small" href="#download">다운로드</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="copy">
+        <p class="eyebrow">Windows · Android · LAN</p>
+        <h1>내 PC 화면을,<br><span class="accent">끊김 없이</span> 어디서나.</h1>
+        <p class="lead">DockFin은 GPU 화면 캡처와 하드웨어 H.264 인코딩으로 지연을 최소화한 원격 화면 공유 프로그램입니다. 다른 PC나 Android 휴대폰에서 화면을 보고, 허용된 경우 마우스와 키보드로 조작할 수 있습니다.</p>
+        <div class="actions"><a class="button" href="#download">무료 다운로드</a><a class="button ghost" href="#start">사용 방법</a></div>
+      </div>
+      <img class="hero-art" src="assets/dockfin.png" width="420" height="420" alt="DockFin 아이콘">
+    </section>
+
+    <section id="features" class="wrap grid">
+      <article><h3>가장 빠르게</h3><p>DXGI 데스크톱 복제 → GPU 색 변환 → NVENC / Quick Sync / AMF 하드웨어 인코딩. 변화가 있을 때만 프레임을 보내 LAN에서 수 ms 지연.</p></article>
+      <article><h3>제어 / 보기 전용</h3><p>제어 비밀번호와 보기 비밀번호를 따로 둘 수 있습니다. 보기 전용 접속은 호스트가 입력을 무시합니다.</p></article>
+      <article><h3>간편한 접속</h3><p>LAN 자동 검색, 1회용 6자리 코드, 호스트 승인 요청, 한 번 인증한 기기 기억(페어링).</p></article>
+      <article><h3>Android 앱</h3><p>하드웨어 디코딩, 터치/트랙패드 모드, 핀치 확대, 소프트 키보드와 특수 키, 클립보드 전송.</p></article>
+      <article><h3>멀티 모니터 · 클립보드</h3><p>보고 싶은 모니터를 바로 전환하고, 텍스트 클립보드를 양방향으로 동기화합니다.</p></article>
+      <article><h3>검증된 자동 업데이트</h3><p>배포 서명(ECDSA P-256)과 SHA-256을 확인한 뒤에만 설치합니다. 실패하면 이전 버전으로 복구합니다.</p></article>
+    </section>
+
+    <section id="start" class="wrap steps">
+      <h2>시작하기</h2>
+      <ol>
+        <li><b>공유할 PC</b>에서 DockFin.exe를 실행합니다. 화면에 PC 이름, 주소, 1회용 코드가 표시됩니다.</li>
+        <li><b>보는 PC 또는 휴대폰</b>에서 DockFin을 열면 같은 네트워크의 PC가 자동으로 나타납니다.</li>
+        <li>PC를 고르고 1회용 코드(또는 설정한 비밀번호)를 입력해 연결합니다. "이 기기 기억"을 켜면 다음부터 바로 연결됩니다.</li>
+      </ol>
+    </section>
+
+    <section id="security" class="wrap note">
+      <h2>보안</h2>
+      <p>모든 연결은 ECDH P-256 키 교환과 AES-256-GCM으로 암호화됩니다. 비밀번호는 PBKDF2로 유도된 증명값만 오가며, 저장된 비밀값은 Windows DPAPI / Android Keystore로 보호됩니다. 5회 연속 인증 실패 시 해당 주소는 5분간 차단됩니다.</p>
+    </section>
+
+    <section id="download" class="wrap download">
+      <h2>다운로드</h2>
+      <div class="cards">
+        <div class="card"><h3>Windows 10/11 x64</h3><p id="win-info">최신 버전 정보를 불러오는 중…</p><a id="win-link" class="button" href="https://github.com/Rubiya82/dockfin-release/releases">릴리스 보기</a></div>
+        <div class="card"><h3>Android 10+</h3><p id="android-info">최신 버전 정보를 불러오는 중…</p><a id="android-link" class="button" href="https://github.com/Rubiya82/dockfin-release/releases">릴리스 보기</a></div>
+      </div>
+      <p class="fine">ZIP 안의 DockFin.exe 하나가 프로그램 전체입니다. GitHub가 자동 생성하는 소스 압축 파일은 프로그램이 아닙니다. 업데이트 검증 공개키: <a href="update-public-key.pem">update-public-key.pem</a></p>
+    </section>
+  </main>
+  <footer class="wrap foot">© 2026 DockFin · <a href="licenses/JSON-LICENSE.txt">JSON</a> · <a href="licenses/MINIZ-LICENSE.txt">miniz</a> · 문의는 <a href="https://github.com/Rubiya82/dockfin-release/issues">Issues</a></footer>
+</body>
+</html>
