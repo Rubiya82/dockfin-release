@@ -1,0 +1,20 @@
+{
+  "downloadUrl": "https://github.com/Rubiya82/dockfin-release/releases/download/android-v0.1.0/DockFin-0.1.0-android.apk",
+  "keyId": "dockfin-release-2026",
+  "minSdk": 29,
+  "packageName": "com.rubiya.dockfin",
+  "platform": "android",
+  "published": true,
+  "releaseNotes": {
+    "en": "DockFin Android update",
+    "ko": "DockFin Android 업데이트"
+  },
+  "schemaVersion": 1,
+  "sha256": "d60f96bde710340bfc1010dc8be146524f40ccddd532f23463074d5f4f983588",
+  "signature": "aaec23246e2a159535c6604b6dad0e94fe93ceaff73a185000a82e387d75e821cdbe7f3b8cf4e35bc4eb1156aafe48f77145207f460e5c1088e9b4bb827b2bed",
+  "signatureAlgorithm": "ecdsa-p256-sha256",
+  "signerSha256": "b61433ee5a9e8b0f98bfe5fb2866728dd10202d1ab1c5845b6cc42c03019cf1b",
+  "sizeBytes": 537210,
+  "version": "0.1.0",
+  "versionCode": 100
+}
